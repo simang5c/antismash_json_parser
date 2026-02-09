@@ -10,6 +10,8 @@ This Python program extracts Biosynthetic Gene Clusters (BGCs) and their associa
  
   - Pandas
   - json
+  - re
+  - sys
 
 ## Usage
 
@@ -17,7 +19,7 @@ Place your antiSMASH JSON file (e.g., antismash_output.json) in the same folder 
 
 ## Run the parser:
 
-python process_json_antismash.py
+python process_json_antismash.py Fungi_genome_antismash_downloaded.json
 
 The program will generate two CSV files:
 - antismash_areas.csv – contains BGC coordinates, products, and protocluster types
