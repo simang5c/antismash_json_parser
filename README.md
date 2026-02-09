@@ -20,6 +20,7 @@ Place your antiSMASH JSON file (e.g., antismash_output.json) in the same folder 
 
 ## Run the parser:
 ```
+# Change the json file with your file
 python process_json_antismash.py Fungi_genome_antismash_downloaded.json
 ```
 
