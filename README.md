@@ -15,8 +15,9 @@ This Python program extracts Biosynthetic Gene Clusters (BGCs) and their associa
 
 ## Usage
 
+```
 Place your antiSMASH JSON file (e.g., antismash_output.json) in the same folder as the script.
-
+```
 ## Run the parser:
 
 python process_json_antismash.py Fungi_genome_antismash_downloaded.json
