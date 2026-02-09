@@ -1,6 +1,7 @@
 import json
 import re
 import pandas as pd
+import sys
 
 def parse_location(loc_str):
     """
@@ -16,7 +17,7 @@ def parse_location(loc_str):
     return min(starts), max(ends), strand
 
 # Load your json file
-json_file = "Fungi_genome_antismash_downloaded.json"
+json_file = sys.argv[1]
 with open(json_file) as f:
     data = json.load(f)
 
