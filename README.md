@@ -1,2 +1,24 @@
-# antismash_json_parser
-Python code to pull results of Antismash Json file
+# AntiSMASH JSON Parser for BGCs and Genes
+
+## Description
+
+This Python program extracts Biosynthetic Gene Clusters (BGCs) and their associated genes from antiSMASH JSON output files. It handles multi-exon and single-exon CDS features, retrieves strand information, and captures all relevant gene annotations, including gene IDs, names, transcripts, products, and translations. The output is formatted into two CSV files for easy downstream analysis.
+
+## Requirements
+
+- Python 3.8 or higher
+ 
+  - Pandas
+  - json
+
+## Usage
+
+Place your antiSMASH JSON file (e.g., antismash_output.json) in the same folder as the script.
+
+## Run the parser:
+
+python process_json_antismash.py
+
+The program will generate two CSV files:
+- antismash_areas.csv – contains BGC coordinates, products, and protocluster types
+- antismash_area_genes.csv – contains gene coordinates, strand, annotations, and translation sequences
